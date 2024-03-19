@@ -7,6 +7,7 @@
     <meta name = "description" content = "Gallery of Murphy Peisel's photography."/>
     <meta name = "author" content = "Murphy Peisel"/>
     <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/gallery.js"></script>
     <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8"/>
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -27,8 +28,16 @@
   <!--Gallery page content.-->
   <main>
     <body>
-      <p>Welcome to my photo gallery!</p>
-    </body>
+      <h2>Welcome to my photo gallery!</h2>
+      <p>Modal image test:</p>
+      <img class="myImages" id="myImg" src="../images/groton.jpg" alt="View from Gibbet Hill in Groton, Massachusetts" width="300" height="200">
+      <img class="myImages" id="myImg" src="../images/tree_night.jpg" alt="Tree at night in Groton, Massachusetts" width="300" height="200">
+      <img class="myImages" id="myImg" src="../images/house_night.jpg" alt="House at night in Groton, Massachusetts" width="300" height="200">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
   </main>
 
   <!--Footer content-->
