@@ -12,6 +12,7 @@ for (var i = 0; i < images.length; i++) {
   var img = images[i];
   // and attach our click listener for this image.
   img.onclick = function(evt) {
+    console.log(evt);
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -20,6 +21,21 @@ for (var i = 0; i < images.length; i++) {
 
 var span = document.getElementsByClassName("close")[0];
 
+// closes modal when user clicks X
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+// closes modal when user clicks outside
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+// closes modal when user presses esc
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        modal.style.display = "none";
+    }
+})
