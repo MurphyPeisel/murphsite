@@ -3,6 +3,7 @@
   --secondarycolor: #C1DFF0;
   --tertiarycolor: #3587A4;
   --quaternarycolor: #2D848A;
+  --quinarycolor: #8ba0bd;
 }
 
 /*GENERAL CSS*/
@@ -43,13 +44,23 @@ footer {
 }
 
 nav a {
-  display: inline;
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 18px;
+  border: 3px solid var(--tertiarycolor);
+  border-radius: 6px
 }
 
+nav a:hover:not(.active){
+  background-color: var(--quinarycolor);
+}
+
+.active {
+  background-color: var(--quaternarycolor);
+}
 /*IMAGE GALLERY FLEXBOX CSS*/
 .row {
   display: flex;
