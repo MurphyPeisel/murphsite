@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <!--Head content-->
-  <head>
-    <title>Murphy Peisel</title>
-    <meta name = "keywords" content = "Software Engineering, Photography, Resume"/>
-    <meta name = "description" content = "Gallery of Murphy Peisel's photography."/>
-    <meta name = "author" content = "Murphy Peisel"/>
-    <link rel="stylesheet" href="../styles/gallery.css">
-    <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8"/>
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  </head>
+<html lang="en">
+<!--Head content-->
 
-  <!--Header content-->
-  <div class="container">
-    <header>
-      <h1>Murphy Peisel - Gallery</h1>
-      <nav>
-        <a href="../">Home</a>
-        <a href="/gallery/">Gallery</a>
-      </nav>
-    </header>
-  </div>
-  
-  <!--Gallery page content.-->
-  <main>
-    <body>
-        <h2>Welcome to my photo gallery!</h2>
-        <img class="myImages" id="myImg" src="../images/groton.jpg" alt="View from Gibbet Hill in Groton, Massachusetts" width="300" height="200">
-        <img class="myImages" id="myImg" src="../images/tree_night.jpg" alt="Tree at night in Groton, Massachusetts" width="300" height="200">
-        <img class="myImages" id="myImg" src="../images/house_night.jpg" alt="House at night in Groton, Massachusetts" width="300" height="200">
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
-        <script src="../scripts/gallery.js" defer></script>
-      </body>
-  </main>
+<head>
+  <title>Murphy Peisel</title>
+  <meta name="keywords" content="Software Engineering, Photography, Resume" />
+  <meta name="description" content="Gallery of Murphy Peisel's photography." />
+  <meta name="author" content="Murphy Peisel" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+  <link rel="stylesheet" href="../styles/gallery.css">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+</head>
 
-  <!--Footer content-->
-  <footer>
-    <p>Author: Murphy Peisel</p>
-    <a href="mailto:mkpeisel@gmail.com">mkpeisel@gmail.com</a></p>
-  </footer>
+<!--Header content-->
+<div class="container">
+  <header>
+    <h1>Murphy Peisel - Gallery</h1>
+    <nav>
+      <a href="../">Home</a>
+      <a href="/gallery/">Gallery</a>
+    </nav>
+  </header>
+</div>
+
+<!--Gallery page content.-->
+<main>
+
+  <body>
+    <h2>Welcome to my photo gallery!</h2>
+    <div class="row">
+      <div class="column">
+        <img class="myImages" id="myImg" src="../images/groton.jpg" alt="View from a hill">
+        <img class="myImages" id="myImg" src="../images/tree_night.jpg" alt="Tree at night">
+        <img class="myImages" id="myImg" src="../images/house_night.jpg" alt="House at night">
+      </div>
+      <div class="column">
+        <img class="myImages" id="myImg" src="../images/greenhouse.jpg" alt="Student walking by a greenhouse">
+        <img class="myImages" id="myImg" src="../images/hospital.jpg" alt="Workers on the outside of a hospital">
+        <img class="myImages" id="myImg" src="../images/redstone.jpg"
+          alt="University of Vermont's Redstone campus in the snow">
+      </div>
+      <div class="column">
+        <img class="myImages" id="myImg" src="../images/river.jpg" alt="Frozen Winooski river">
+        <img class="myImages" id="myImg" src="../images/trees.jpg" alt="Trees">
+        <img class="myImages" id="myImg" src="../images/watertower.jpg" alt="Watertower and lift">
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script src="../scripts/gallery.js" defer></script>
+  </body>
+</main>
+
+<!--Footer content-->
+<footer>
+  <p>Author: Murphy Peisel</p>
+  <a href="mailto:mkpeisel@gmail.com">mkpeisel@gmail.com</a></p>
+</footer>
+
 </html>
