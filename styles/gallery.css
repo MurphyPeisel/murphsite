@@ -61,6 +61,12 @@ nav a:hover:not(.active){
 .active {
   background-color: var(--quaternarycolor);
 }
+
+img {
+  height: auto;
+  background-color: var(--secondarycolor);
+  display: inline-block;
+}
 /*IMAGE GALLERY FLEXBOX CSS*/
 .row {
   display: flex;
